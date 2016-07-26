@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using Restuarant.Models;
+using Restaurant.Models;
 
-namespace Restuarant.Controllers
+namespace Restaurant.Controllers
 {
     [Authorize]
     public class AccountController : Controller

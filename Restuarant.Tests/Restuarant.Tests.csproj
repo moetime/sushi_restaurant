@@ -92,9 +92,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Restuarant\Restuarant.csproj">
+    <ProjectReference Include="..\Restuarant\Restaurant.csproj">
       <Project>{F331BAA8-C43D-43F9-896B-B5B0C6ABB6E0}</Project>
-      <Name>Restuarant</Name>
+      <Name>Restaurant</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
