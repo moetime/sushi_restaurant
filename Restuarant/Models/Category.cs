@@ -1,32 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Restaurant.Models
+namespace Restuarant.Models
 {
-    public class Category
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
+
+    [Table("Category")]
+    public partial class Category
     {
-        /// <summary>
-        /// This is the empty constructor
-        /// </summary>
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Category()
         {
-
+            FoodItems = new HashSet<FoodItem>();
         }
 
-        /// <summary>
-        /// This constructor takes one paramter - Name
-        /// </summary>
-        /// <param name="Name"></param>
-        public Category(string Name)
-        {
-            this.Name = Name;
-        }
+        public int ID { get; set; }
 
-        public virtual int CategoryID { get; set; }
-        public virtual string Name { get; set; }
-        public virtual List<FoodItem> FoodItems { get; set; }
+        [Required]
+        [StringLength(50)]
+        [Display(Name = "Category Name")]
+        public string Name { get; set; }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<FoodItem> FoodItems { get; set; }
     }
 }

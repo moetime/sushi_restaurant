@@ -1,39 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Restaurant.Models
+namespace Restuarant.Models
 {
-    public class FoodItem
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
+
+    [Table("FoodItem")]
+    public partial class FoodItem
     {
-        /// <summary>
-        /// This is the empty constructor
-        /// </summary>
-        public FoodItem()
-        {
+        public int ID { get; set; }
 
-        }
+        public int CategoryID { get; set; }
 
-        /// <summary>
-        /// This constructor takes one parameter - Title
-        /// </summary>
-        /// <param name="Title"></param>
-        public FoodItem(string Name)
-        {
-            this.Name = Name;
-        }
+        [Required]
+        [StringLength(50)]
+        public string Name { get; set; }
 
-        public virtual int FoodID { get; set; }
-        public virtual string Name { get; set; }
+        [Column(TypeName = "money")]
+        [Display(Name = "Price")]
+        public decimal Price { get; set; }
 
-        public virtual string ShortDesc { get; set; }
+        [Required]
+        [StringLength(300)]
+        [Display(Name = "Food Description")]
+        public string ShortDesc { get; set; }
 
-        public virtual string LongDesc { get; set; }
+        [Required]
+        [Display(Name = "Detailed Description")]
+        public string LongDesc { get; set; }
 
-        public virtual double Price { get; set; }
+        [Required]
+        [StringLength(200)]
+        [Display(Name = "Thumnail Image")]
+        public string ThumbURL { get; set; }
 
-        public virtual string ThumbImage { get; set; }
-        public virtual string LgImage { get; set; }
+        [Required]
+        [StringLength(200)]
+        [Display(Name = "Large Image")]
+        public string LargeURL { get; set; }
+
+        public virtual Category Category { get; set; }
     }
 }
