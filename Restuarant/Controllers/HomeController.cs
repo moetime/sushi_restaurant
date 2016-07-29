@@ -16,7 +16,13 @@ namespace Restaurant.Controllers
         {
             return View();
         }
+        [AllowAnonymous]
+        // GET: /Home/
+        public ActionResult Contact()
+        {
+            return View();
+        }
 
-       
+
     }
 }

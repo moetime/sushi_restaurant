@@ -44,7 +44,7 @@
                 @Html.DisplayFor(modelItem => item.ShortDesc)
             </td>
             <td>
-                     @Html.ActionLink("Details", "Details", new { id = item.ID })
+                <a href="@Url.Action("Details", "Menu", new { id = item.ID })" class="btn btn-info"><i class="fa fa-eye fa-lg"></i> Details</a>
 </td>
         </tr>
     }

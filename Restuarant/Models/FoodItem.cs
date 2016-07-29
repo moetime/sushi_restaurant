@@ -32,7 +32,7 @@ namespace Restaurant.Models
 
         [Required]
         [StringLength(200)]
-        [Display(Name = "Thumnail Image")]
+        [Display(Name = "Thumbnail Image")]
         public string ThumbURL { get; set; }
 
         [Required]
