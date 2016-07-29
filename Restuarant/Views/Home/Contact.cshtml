@@ -1,17 +1,50 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Contact Sushi Express";
 }
-<h2>@ViewBag.Title.</h2>
+<h2>@ViewBag.Title</h2>
 <h3>@ViewBag.Message</h3>
 
 <address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
+    One Georgian Way<br />
+    Barrie, ON L9Y 3S6 <br />
+    <abbr title="Phone">Prease Dial</abbr>
+    145.365.6698
 </address>
 
 <address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    <strong>Support:</strong>   <a href="mailto:KungWing.com">Support@sushiexpress.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:ReerlyDeriousFish@example.com ">Marketing@sushiexpress.com</a>
 </address>
+
+
+
+    <h3>Business Location</h3>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQQv9cufePm-xMephyzLqIPIDG9OPo7d0&callback=initMap"
+        async defer></script>
+    <div id="map"></div>
+<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+</script>
+<div col="col-md-12">
+
+    <img src="~/Assets/images/map.png" />
+
+</div>
+
+<div class="col-md-12">
+
+    <div class="text-center center-block">
+        <br />
+        <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social"></i></a>
+        <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social"></i></a>
+        <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+        <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+    </div>
+</div>

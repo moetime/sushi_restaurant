@@ -198,6 +198,7 @@
     <Content Include="Assets\images\large_icecream.jpg" />
     <Content Include="Assets\images\large_salad.jpg" />
     <Content Include="Assets\images\large_salmon.jpg" />
+    <Content Include="Assets\images\map.PNG" />
     <Content Include="Assets\images\thumb_greentea.jpg" />
     <Content Include="Assets\images\thumb_icecream.jpg" />
     <Content Include="Assets\images\thumb_salad.jpg" />
