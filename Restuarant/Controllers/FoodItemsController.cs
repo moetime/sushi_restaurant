@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using Restuarant.Models;
+using Restaurant.Models;
 
-namespace Restuarant.Controllers
+namespace Restaurant.Controllers
 {
     public class FoodItemsController : Controller
     {

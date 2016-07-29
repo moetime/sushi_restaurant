@@ -186,6 +186,7 @@
     <Compile Include="Models\FoodItem.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\SushiContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -193,6 +194,14 @@
   <ItemGroup>
     <Content Include="App_Start\Assets\Images\salmon-sushi-lg.jpg" />
     <Content Include="App_Start\Assets\Images\salmon-sushi-thumb.jpg" />
+    <Content Include="Assets\images\large_greentea.jpg" />
+    <Content Include="Assets\images\large_icecream.jpg" />
+    <Content Include="Assets\images\large_salad.jpg" />
+    <Content Include="Assets\images\large_salmon.jpg" />
+    <Content Include="Assets\images\thumb_greentea.jpg" />
+    <Content Include="Assets\images\thumb_icecream.jpg" />
+    <Content Include="Assets\images\thumb_salad.jpg" />
+    <Content Include="Assets\images\thumb_salmon.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
