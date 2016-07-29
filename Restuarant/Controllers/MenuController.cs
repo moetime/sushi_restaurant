@@ -11,16 +11,19 @@ using Restaurant.Models;
 
 namespace Restaurant.Controllers
 {
+    [Authorize]
     public class MenuController : Controller
     {
         private SushiContext db = new SushiContext();
 
+        [AllowAnonymous]
         // GET: FoodItems
         public async Task<ActionResult> Index()
         {
             var foodItems = db.FoodItems.Include(f => f.Category);
             return View(await foodItems.ToListAsync());
         }
+        [AllowAnonymous]
         // GET: FoodItems/Details/5
         public async Task<ActionResult> Details(int? id)
         {
