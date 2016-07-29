@@ -1,4 +1,12 @@
-﻿body {
+﻿/**
+    @file name: Site.css
+    @author: Morrice and Irin
+    @website: http://restuarant-sushi.azurewebsites.net/
+    @description: Our site CSS
+
+*/
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
