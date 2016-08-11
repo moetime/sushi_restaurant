@@ -20,8 +20,19 @@ namespace Restaurant.Controllers
         // GET: FoodItems
         public async Task<ActionResult> Index()
         {
-            var foodItems = db.FoodItems.Include(f => f.Category);
-            return View(await foodItems.ToListAsync());
+
+            var menuItems = new Restaurant.Models.Menu {
+
+                foodItems = db.FoodItems.Include(f => f.Category).ToList(),
+                categories = db.Categories.Include(f => f.FoodItems).ToList()
+                
+            };
+
+            return View(menuItems);
+
+
+            //var foodItems = db.FoodItems.Include(f => f.Category);
+            //return View(await foodItems.ToListAsync());
         }
         [AllowAnonymous]
         // GET: FoodItems/Details/5

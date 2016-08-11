@@ -30,3 +30,35 @@ select,
 textarea {
     max-width: 280px;
 }
+.thumbnail{
+    
+   position: relative;
+}
+.thumbnail .caption{
+    text-align:center;
+}
+.food-item{
+    padding-top:10px;
+}
+.item-background{    
+   background-color: #EBEBEB;
+    
+}
+.menu-banner{
+    padding-left:30px;
+   background-color: #444444;
+   border-bottom:5px solid #d9534f;
+   color:#ebebeb;
+   text-align:left;
+}
+.quantity-input{
+    width:100px;
+}
+.price-tag{    
+   float: left;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   z-index: 1000;
+   padding: 5px;
+}

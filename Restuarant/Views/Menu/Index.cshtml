@@ -1,25 +1,37 @@
 ﻿
-@model IEnumerable<Restaurant.Models.FoodItem>
+@model Restaurant.Models.Menu
 @{
     ViewBag.Title = "Menu";
 }
 
-<h2>Menu</h2>
-<div class="row">
-    @foreach (var item in Model)
-    {
+@foreach (var category in Model.categories) {
+
+    <div class="row menu-banner">
+        <h2>@Html.DisplayFor(modelItem => category.Name)s</h2>
+    </div>
+    <div class="row item-background">
+        @foreach (var item in Model.foodItems.Where(x => x.Category.Equals(category))) {
 
 
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img alt="100%x200" data-src="holder.js/100%x200" src="@Html.DisplayFor(modelItem => item.ThumbURL)" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
-                <div class="caption">
-                    <h3>@Html.DisplayFor(modelItem => item.Name) <span class="badge">$@Html.DisplayFor(modelItem => item.Price)</span></h3>
-                    <p>@Html.DisplayFor(modelItem => item.ShortDesc)</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Order</a></p>
+            <div class="col-xs-8 col-xs-offset-2  col-sm-offset-0  col-sm-6 col-md-4  col-lg-3 food-item">
+                <div class="thumbnail">
+                    <img alt="100%x200" data-src="holder.js/100%x200" src="@Html.DisplayFor(modelItem => item.ThumbURL)" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+                    <span class="label label-info price-tag">$@Html.DisplayFor(modelItem => item.Price)</span>
+                    <div class="caption">
+                        <h3>@Html.DisplayFor(modelItem => item.Name)</h3>
+                        <p>@Html.DisplayFor(modelItem => item.ShortDesc)</p>
+                        <h3></h3>
+                        <div class="form-group">
+                            <input class="input-lg quantity-input" placeholder="Qty" type="number">
+                        </div>
+                        <div class="form-group">
+                            <a href="#" class="btn btn-primary" role="button">Order</a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
-    }
+        }
 
-</div>
+    </div>
+}
