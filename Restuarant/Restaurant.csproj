@@ -194,6 +194,7 @@
     <Compile Include="Models\MenuModel.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderDetail.cs" />
+    <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\ShoppingCartContext.cs" />
     <Compile Include="Models\SushiContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -327,7 +328,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50896</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
