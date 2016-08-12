@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Restuarant.Models.Cart>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SessionID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumItems)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodItemID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SessionID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumItems)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateCreated)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoodItemID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CartID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CartID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CartID })
+        </td>
+    </tr>
+}
+
+</table>
