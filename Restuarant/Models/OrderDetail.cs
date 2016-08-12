@@ -1,4 +1,4 @@
-namespace Restuarant.Models
+namespace Restaurant.Models
 {
     using System;
     using System.Collections.Generic;
@@ -16,8 +16,11 @@ namespace Restuarant.Models
 
         public int FoodItemID { get; set; }
 
+        public virtual FoodItem FoodItem { get; set; }
+
         public int OrderID { get; set; }
 
         public virtual Order Order { get; set; }
+        
     }
 }

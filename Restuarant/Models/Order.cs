@@ -1,4 +1,4 @@
-namespace Restuarant.Models
+namespace Restaurant.Models
 {
     using System;
     using System.Collections.Generic;
@@ -8,11 +8,7 @@ namespace Restuarant.Models
 
     public partial class Order
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Order()
-        {
-            OrderDetails = new HashSet<OrderDetail>();
-        }
+        
 
         public int OrderID { get; set; }
 
@@ -40,7 +36,6 @@ namespace Restuarant.Models
 
         public DateTime OrderDate { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+        public virtual List<OrderDetail> OrderDetails { get; set; }
     }
 }

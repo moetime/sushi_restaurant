@@ -1,4 +1,4 @@
-namespace Restuarant.Models {
+namespace Restaurant.Models {
     using System;
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
