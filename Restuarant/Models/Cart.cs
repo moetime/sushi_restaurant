@@ -1,4 +1,4 @@
-namespace Restuarant.Models
+namespace Restaurant.Models
 {
     using System;
     using System.Collections.Generic;
@@ -6,8 +6,7 @@ namespace Restuarant.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Cart
-    {
+    public partial class Cart {
         public int CartID { get; set; }
 
         public string SessionID { get; set; }
@@ -17,5 +16,7 @@ namespace Restuarant.Models
         public DateTime DateCreated { get; set; }
 
         public int FoodItemID { get; set; }
+
+        public virtual FoodItem FoodItem {get;set;}
     }
 }
