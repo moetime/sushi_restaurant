@@ -32,11 +32,25 @@
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+        @RenderBody()        
+    </div>
+    <div class="footer">
+            <div class="container">
+
+                <div class="row">
+                    <div class="text-center center-block social-media-icon">
+                        <br />
+                        <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social"></i></a>
+                        <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social"></i></a>
+                        <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+                        <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+                    </div>
+                </div>
+                <div class="row copyright">
+                    <p class="text-muted">&copy; @DateTime.Now.Year - Sushi Express</p>
+
+                </div>
+         </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
