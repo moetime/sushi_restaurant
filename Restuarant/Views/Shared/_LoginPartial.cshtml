@@ -9,7 +9,7 @@
         <li>
             @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
         </li>
-        <li><a href="javascript:document.getElementById('logoutForm').submit()"><i class="fa fa-sign-out fa-lg red-icon"></i> Log off</a></li>
+        <li><a href="javascript:document.getElementById('logoutForm').submit()"><i class="fa fa-sign-out fa-lg "></i> Log off</a></li>
     </ul>
     }
 }
@@ -17,13 +17,13 @@ else
 {
     <ul class="nav navbar-nav navbar-right">
         <li>
-            <a href="@Url.Action("Register","Account")"><i class="fa fa-user-plus fa-lg red-icon"></i> Register</a>
+            <a href="@Url.Action("Register","Account")"><i class="fa fa-user-plus fa-lg "></i> Register</a>
         </li>
         <li>
-            <a href="@Url.Action("Login","Account")"><i class="fa fa-sign-in fa-lg red-icon"></i> Log In</a>
+            <a href="@Url.Action("Login","Account")"><i class="fa fa-sign-in fa-lg "></i> Log In</a>
         </li>
       
-       <!--<li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>--> 
+       <!--<li>@*Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })*@</li>
+        <li>@*Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })*@</li>--> 
     </ul>
 }
