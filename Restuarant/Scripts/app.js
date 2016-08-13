@@ -1,6 +1,7 @@
 // IIFE
 (function () {
     // Document.ready -> link up remove event handler
+    var cartValue = 0;
     $(".RemoveLink").click(function () {
         // Get the id from the link
         var recordToDelete = $(this).attr("data-id");
