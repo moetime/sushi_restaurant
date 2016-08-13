@@ -21,11 +21,11 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Menu", "Index", "Menu")</li>
+                    <li><i class="fa fa-home" aria-hidden="true"></i>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li><i class="fa fa-cutlery" aria-hidden="true"></i>@Html.ActionLink("Menu", "Index", "Menu")</li>
                     <!--<li>@*Html.ActionLink("About", "Index", "About")*@</li>-->
-                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Cart", "Index", "Carts")</li>
+                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                    <li><i class="fa fa-shopping-cart" aria-hidden="true"></i>@Html.ActionLink("Cart", "Index", "Carts")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
