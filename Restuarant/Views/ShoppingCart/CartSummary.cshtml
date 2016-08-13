@@ -1,2 +1,2 @@
-﻿@Html.ActionLink(" (" + ViewData["CartCount"] + ")",
-                "Index", "ShoppingCart", new { id = "cart-status" })
+﻿@Html.ActionLink(" " + ViewData["CartCount"],
+   "Index", "ShoppingCart", new { id = "cart-status" }, new { @class = "fa fa-shopping-cart fa-lg red-icon", @title = "Shopping Cart", @id = "shoppingCart" })
