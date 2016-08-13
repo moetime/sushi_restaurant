@@ -33,7 +33,7 @@
                         <a href="@Url.Action("Contact","Home")"><i class="fa fa-envelope fa-lg red-icon"></i> Contact Us</a>
                     </li>
                     <li>
-                        <a href="@Url.Action("Index","ShoppingCart")"><i class="fa fa-shopping-cart fa-lg red-icon"></i> Cart</a>
+                        <a href="@{Html.RenderAction("CartSummary", "ShoppingCart");}"><i class="fa fa-shopping-cart fa-lg red-icon"></i> Cart</a>
                     </li>
                 </ul>
                 @Html.Partial("_LoginPartial")
