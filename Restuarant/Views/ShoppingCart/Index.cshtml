@@ -11,7 +11,7 @@
 </p>
 <div id="update-message">
 </div>
-<table>
+<table class="table table-condensed table-bordered">
     <tr>
         <th>
             Food Item Name
@@ -27,15 +27,15 @@
     @foreach (var item in
         Model.CartItems)
     {
-        <tr id="row-@item.FoodItem">
+        <tr id="row-@item.FoodItemID">
             <td>
-                @Html.ActionLink(item.FoodItem.Name, "Details", "Store",
+                @Html.ActionLink(item.FoodItem.Name, "Details", "Menu",
                     new { id = item.FoodItemID }, null)
             </td>
             <td>
                 @item.FoodItem.Price
             </td>
-            <td id="item-count-@item.FoodItem">
+            <td id="item-count-@item.FoodItemID">
                 @item.NumItems
             </td>
             <td>

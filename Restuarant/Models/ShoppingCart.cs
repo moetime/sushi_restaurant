@@ -49,9 +49,10 @@ namespace Restaurant.Models
         }
         public int RemoveFromCart(int id) {
             // Get the cart
+            
             var cartItem = storeDB.Carts.Single(
                 cart => cart.SessionID == ShoppingCartId
-                && cart.CartID == id);
+                && cart.FoodItemID == id);
 
             int itemCount = 0;
 
