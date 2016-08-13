@@ -2,59 +2,69 @@
 @{
     ViewBag.Title = "Shopping Cart";
 }
+<div class="row shopping-nav">
+    <div class="col-md-6">
+        <a class="btn btn-lg btn-primary" href="@Url.Action("Index", "Menu")">Back to Menu</a>
 
-<h3>
-    <em>Review</em> your cart:
-</h3>
-<p class="button">
-    @Html.ActionLink("Checkout >> ", "AddressAndPayment", "Checkout")
-</p>
-<div id="update-message">
+    </div>
+    <div class="col-md-6">
+        <span class="pull-right">
+            <a class="btn btn-lg btn-success" href="@Url.Action("AddressAndPayment", "Checkout")">Checkout >></a>
+        </span>
+    </div>
 </div>
-<table class="table table-condensed table-bordered">
-    <tr>
-        <th>
-            Food Item Name
-        </th>
-        <th>
-            Price (each)
-        </th>
-        <th>
-            Quantity
-        </th>
-        <th></th>
-    </tr>
-    @foreach (var item in
-        Model.CartItems)
-    {
-        <tr id="row-@item.FoodItemID">
-            <td>
-                @Html.ActionLink(item.FoodItem.Name, "Details", "Menu",
+<div class="row item-background">
+
+    <h3>
+        <em>Review</em> your cart:
+    </h3>
+    <div id="update-message">
+    </div>
+    <table class="table table-condensed table-bordered">
+        <tr>
+            <th>
+                Food Item Name
+            </th>
+            <th>
+                Price (each)
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th></th>
+        </tr>
+        @foreach (var item in
+                                    Model.CartItems) {
+            <tr id="row-@item.FoodItemID">
+                <td>
+                    @Html.ActionLink(item.FoodItem.Name, "Details", "Menu",
                     new { id = item.FoodItemID }, null)
-            </td>
+                </td>
+                <td>
+                    @item.FoodItem.Price
+                </td>
+                <td id="item-count-@item.FoodItemID">
+                    @item.NumItems
+                </td>
+                <td>
+                    <a href="#" class="RemoveLink"
+                       data-id="@item.FoodItemID">
+                        Remove
+                        from cart
+                    </a>
+                </td>
+            </tr>
+        }
+        <tr>
             <td>
-                @item.FoodItem.Price
+                Total
             </td>
-            <td id="item-count-@item.FoodItemID">
-                @item.NumItems
-            </td>
-            <td>
-                <a href="#" class="RemoveLink"
-                   data-id="@item.FoodItemID">
-                    Remove
-                    from cart
-                </a>
+            <td></td>
+            <td></td>
+            <td id="cart-total">
+                @Model.CartTotal
             </td>
         </tr>
-    }
-    <tr>
-        <td>
-            Total
-        </td>
-        <td></td>
-        <td></td>
-        <td id="cart-total">
-            @Model.CartTotal
-        </td>
-    </tr>
-</table>
+    </table>
+
+</div>

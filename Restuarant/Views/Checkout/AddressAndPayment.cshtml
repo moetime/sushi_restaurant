@@ -6,6 +6,19 @@
 
 @using (Html.BeginForm()) {
 
+<div class="row shopping-nav">
+    <div class="col-md-6">
+        <a class="btn btn-lg btn-primary" href="@Url.Action("Index", "ShoppingCart")">Back to Cart</a>
+
+    </div>
+    <div class="col-md-6">
+        <span class="pull-right">
+            <input type="submit" id="payBtn" class="btn btn-success btn-lg" value="Submit Order" />
+        </span>
+    </div>
+</div>
+
+
     <h2>Address And Payment</h2>
     <fieldset>
         <legend>Shipping Information</legend>
@@ -99,16 +112,8 @@
             @Html.TextBox("PromoCode")
         </div>
     </fieldset>
-        
-    <div>
-        <input type="submit" id="payBtn" class="btn btn-success btn-lg" value="Submit Order" />
-    </div>
-       
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
