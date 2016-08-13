@@ -1,7 +1,7 @@
 ﻿// IIFE
 (function () {
     // Document.ready -> link up remove event handler
-
+    
     $(".RemoveLink").click(function () {
 
         // Get the id from the link
