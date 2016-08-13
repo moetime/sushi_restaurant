@@ -21,11 +21,20 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><i class="fa fa-home" aria-hidden="true"></i>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li><i class="fa fa-cutlery" aria-hidden="true"></i>@Html.ActionLink("Menu", "Index", "Menu")</li>
+                    <li>
+                        <a href="@Url.Action("Index","Home")"><i class="fa fa-home fa-lg red-icon"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index","Menu")"><i class="fa fa-cutlery fa-lg red-icon"></i> Menu</a>
+                    </li>
                     <!--<li>@*Html.ActionLink("About", "Index", "About")*@</li>-->
-                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
-                    <li><i class="fa fa-shopping-cart" aria-hidden="true"></i>@Html.ActionLink("Cart", "Index", "ShoppingCart")</li>
+                    <li>
+
+                        <a href="@Url.Action("Contact","Home")"><i class="fa fa-envelope fa-lg red-icon"></i> Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index","ShoppingCart")"><i class="fa fa-shopping-cart fa-lg red-icon"></i> Cart</a>
+                    </li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -38,12 +47,12 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="text-center center-block social-media-icon">
+                    <div class="text-center center-block">
                         <br />
-                        <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social"></i></a>
-                        <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social"></i></a>
-                        <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social"></i></a>
-                        <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+                        <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social red-icon"></i></a>
+                        <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social red-icon"></i></a>
+                        <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social red-icon"></i></a>
+                        <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social red-icon"></i></a>
                     </div>
                 </div>
                 <div class="row copyright">
