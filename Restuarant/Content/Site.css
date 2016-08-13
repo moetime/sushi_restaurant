@@ -68,3 +68,10 @@ textarea {
 #payBtn{
     margin-top:20px;
 }
+.shopping-nav{
+    padding-top:10px;
+    padding-bottom:10px;
+   background-color: #444444;
+   border-bottom:5px solid #d9534f;
+   color:#ebebeb;
+}
