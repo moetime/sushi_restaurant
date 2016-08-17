@@ -93,3 +93,10 @@ textarea {
 .red-icon{
     color:#d9534f;
 }
+.jumbotron{
+    margin-top:10px;
+    color:white;
+ height:600px;
+background-image: url("/Assets/images/sushibg.jpg");
+background-size: cover;}
+}
