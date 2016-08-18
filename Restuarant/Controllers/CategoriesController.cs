@@ -1,4 +1,12 @@
-﻿using System;
+﻿/***
+                           *Author: Irin Avery, Morrice Pfeiffer, Marco Duarte
+                           * Student Number: 200260949, 	200293988, 100006379
+                           * Date	Modified: Aug 18 2016
+                           * Short Version History: Scaffolded the categories controller from the database
+                           * Description: A controller that allows categories to be edited, deleted 
+                           * and viewed
+ */
+ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;

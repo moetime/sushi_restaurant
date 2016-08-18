@@ -1,4 +1,11 @@
-namespace Restaurant.Models
+/***
+                           *Author: Irin Avery, Morrice Pfeiffer, Marco Duarte
+                           * Student Number: 200260949, 	200293988, 100006379
+                           * Date	Modified: Aug 18 2016
+                           * Short Version History: Scaffolded the categories model from the database
+                           * Description: A model that holds the columns of the categories
+ */
+ namespace Restaurant.Models
 {
     using System;
     using System.Collections.Generic;

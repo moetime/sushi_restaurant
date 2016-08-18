@@ -1,4 +1,12 @@
-﻿@model int
+﻿@{/***
+                           *Author: Irin Avery, Morrice Pfeiffer, Marco Duarte
+                           * Student Number: 200260949, 	200293988, 100006379
+                           * Date	Modified: Aug 18 2016
+                           * Short Version History: Updated page to reflect sushi
+                           * Description: A page to show the user their order number
+                        */
+}
+@model int
 @{
     ViewBag.Title = "Checkout Complete";
 }
@@ -6,5 +14,5 @@
 <p>Thanks for your order! Your order number is: @Model</p>
 <p>
     How about shopping for some more sushi in our
-    @Html.ActionLink("store","Index", "Menu")
+    @Html.ActionLink("store", "Index", "Menu")
 </p>

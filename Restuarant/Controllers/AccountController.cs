@@ -1,4 +1,11 @@
-﻿using System;
+﻿/***
+                           *Author: Irin Avery, Morrice Pfeiffer, Marco Duarte
+                           * Student Number: 200260949, 	200293988, 100006379
+                           * Date	Modified: Aug 18 2016
+                           * Short Version History: Scaffolded the account controller from the database
+                           * Description: A controller that allows pages to be authenticated
+ */
+ using System;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;

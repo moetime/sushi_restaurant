@@ -1,11 +1,10 @@
-﻿/**
-    @file name: Site.css
-    @author: Morrice and Irin
-    @website: http://Restaurant-sushi.azurewebsites.net/
-    @description: Our site CSS
-
-*/
-
+﻿/***
+                           *Author: Irin Avery, Morrice Pfeiffer, Marco Duarte
+                           * Student Number: 200260949, 	200293988, 100006379
+                           * Date	Modified: Aug 18 2016
+                           * Short Version History: Adjusted jumbotron to have image of sushi in it
+                           * Description: Our site CSS
+ */
 body {
     padding-top: 50px;
     padding-bottom: 20px;

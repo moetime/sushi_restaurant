@@ -1,4 +1,11 @@
-﻿using System;
+﻿/***
+                           *Author: Irin Avery, Morrice Pfeiffer, Marco Duarte
+                           * Student Number: 200260949, 	200293988, 100006379
+                           * Date	Modified: Aug 18 2016
+                           * Short Version History: Scaffolded the manager controller from the project
+                           * Description: A controller that allows users to be registered and signed in
+ */
+ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;

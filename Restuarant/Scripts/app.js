@@ -1,3 +1,10 @@
+/***
+                           *Author: Irin Avery, Morrice Pfeiffer, Marco Duarte
+                           * Student Number: 200260949, 	200293988, 100006379
+                           * Date	Modified: Aug 18 2016
+                           * Short Version History: Removed console debug logs
+                           * Description: Javascript that removes items from the cart
+                        */
 // IIFE
 (function () {
     // Document.ready -> link up remove event handler

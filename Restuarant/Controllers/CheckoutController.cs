@@ -1,4 +1,11 @@
-﻿using System;
+﻿/***
+                           *Author: Irin Avery, Morrice Pfeiffer, Marco Duarte
+                           * Student Number: 200260949, 	200293988, 100006379
+                           * Date	Modified: Aug 18 2016
+                           * Short Version History: Scaffolded the checkout controller from the database
+                           * Description: A controller that allows checkout to be viewed and completed
+ */
+ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -25,6 +32,7 @@ namespace Restuarant.Controllers
             TryUpdateModel(order);
 
             try {
+
                 if (string.Equals(values["PromoCode"], PromoCode,
                     StringComparison.OrdinalIgnoreCase) == false) {
                     return View(order);

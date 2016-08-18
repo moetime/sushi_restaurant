@@ -1,2 +1,10 @@
-﻿@Html.ActionLink(" " + ViewData["CartCount"],
+﻿@{/***
+                                       *Author: Irin Avery, Morrice Pfeiffer, Marco Duarte
+                                       * Student Number: 200260949, 	200293988, 100006379
+                                       * Date	Modified: Aug 18 2016
+                                       * Short Version History: Cart summary now has font-awesome icon
+                                       * Description: A view shows the number of items in the cart
+                                    */
+}
+@Html.ActionLink(" " + ViewData["CartCount"],
    "Index", "ShoppingCart", new { id = "cart-status" }, new { @class = "fa fa-shopping-cart fa-lg", @title = "Shopping Cart", @id = "shoppingCart" })

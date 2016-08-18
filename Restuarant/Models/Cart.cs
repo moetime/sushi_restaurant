@@ -1,3 +1,11 @@
+/***
+                           *Author: Irin Avery, Morrice Pfeiffer, Marco Duarte
+                           * Student Number: 200260949, 	200293988, 100006379
+                           * Date	Modified: Aug 18 2016
+                           * Short Version History: Scaffolded the cart from the database
+                           * Description: A model that holds the columns of the cart
+ */
+
 namespace Restaurant.Models
 {
     using System;
