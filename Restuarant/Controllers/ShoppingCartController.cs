@@ -52,8 +52,8 @@ namespace Restaurant.Controllers
             var cart = ShoppingCart.GetCart(this.HttpContext);
 
             // Get the name of the album to display confirmation
-            string foodItemName = shoppingCartDB.Carts
-                .Single(FoodItem => FoodItem.CartID == id).FoodItem.Name;
+            string foodItemName = sushiItemsDB.FoodItems
+                .Single(FoodItem => FoodItem.ID == id).Name;
 
             // Remove from cart
             int itemCount = cart.RemoveFromCart(id);

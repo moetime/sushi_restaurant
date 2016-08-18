@@ -10,11 +10,9 @@
                 // Successful requests get here
                 // Update the page elements
                 if (data.ItemCount == 0) {
-                    window.alert("REMOVED" + data.DeleteId);
                     $('#row-' + data.DeleteId).fadeOut('slow');
                 }
                 else {
-                    window.alert("Removed Quantity from" + data.DeleteId);
                     $('#item-count-' + data.DeleteId).text(data.ItemCount);
                 }
                 $('#cart-total').text(data.CartTotal);
