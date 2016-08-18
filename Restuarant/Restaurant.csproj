@@ -209,16 +209,25 @@
   <ItemGroup>
     <Content Include="App_Start\Assets\Images\salmon-sushi-lg.jpg" />
     <Content Include="App_Start\Assets\Images\salmon-sushi-thumb.jpg" />
+    <Content Include="Assets\images\edamame.png" />
     <Content Include="Assets\images\large_greentea.jpg" />
     <Content Include="Assets\images\large_icecream.jpg" />
     <Content Include="Assets\images\large_salad.jpg" />
     <Content Include="Assets\images\large_salmon.jpg" />
     <Content Include="Assets\images\map.PNG" />
+    <Content Include="Assets\images\red-bean-icecream.png" />
+    <Content Include="Assets\images\roodles.jpg" />
+    <Content Include="Assets\images\sake.png" />
+    <Content Include="Assets\images\salmon-sushi-highResolution.png" />
     <Content Include="Assets\images\sushibg.jpg" />
     <Content Include="Assets\images\thumb_greentea.jpg" />
     <Content Include="Assets\images\thumb_icecream.jpg" />
     <Content Include="Assets\images\thumb_salad.jpg" />
     <Content Include="Assets\images\thumb_salmon.jpg" />
+    <Content Include="Assets\images\toro.jpg" />
+    <Content Include="Assets\images\tuna-sashimi.jpg" />
+    <Content Include="Assets\images\unagi-water.png" />
+    <Content Include="Assets\images\unagi.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
